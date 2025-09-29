@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>My Website</title>
-        <link rel="icon" href="images/pngtree-vector-medical-icon-png-image_515477.png" type="image/png" />
-        <link rel="stylesheet" href="./css/style.css" />
-    </head>
-    
-    <body>
-        <div class="hero">
-        <h1>
-            Welcome to MediSource
-        </h1>
-        <form action="https://google.com"><br>
-            <input type="submit" value="Go to Google" /><br>
-            <label for="username">Username</label><br>
-            <input type="text" id="username" name="username"/><br>
-            <label for="password">Password</label><br>
-            <input type="password" id="password" name="password" /><br>
-            <input type="submit" value="submit" /><br>
+<head>
+    <meta charset="UTF-8">
+    <title>MediSource Login</title>
+    <link rel="icon" href="images/pngtree-vector-medical-icon-png-image_515477.png" type="image/png" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <div class="login-container">
+        <form action="dashboard.html" method="post">
+            <img src="images/medical-cross-red-circle-vector-transparent-background_799714-186.jpg" alt="MediSource Logo" class="logo" />
+            <h1>Welcome to MediSource</h1>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required />
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+
+            <button type="submit">Login</button>
         </form>
-        <button type="button" onclick="alert('Hello world!')">Click Me!</button><br>
-        <img src="images/zvcx62z3b8091.jpg" alt="zvcx62z3b8091" width="400" height="300"/><br>
-        <a href="videos/DeadByDaylight   2021-02-20 22-54-24.mp4">Video</a><br>
-        <a href="https://www.google.com" target="_blank">Google</a>
-        </div>
-    </body>
+ 
+        <p style="margin-top: 1rem; font-size: 0.9rem;">
+            Don’t have an account? <a href="register.html">Register here</a>
+        </p>
+    </div>
+</body>
 </html>
